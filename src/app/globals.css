@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --blue-color: #2563ec;
+  --active-color: #e7e7e7;
+  --sidebar-bc-color: #efefef;
+  --text-color: #706f6f;
+  --black-text-color: #2b2b2b;
+  --white-color: #fff;
+  --blue-hover-color: #3c75f0;
+  --sidebar-bc-hover-gray: #e2dfdf;
+}
+a {
+  color: var(--black-text-color);
+  text-decoration: none;
+}
+.dotted {
+  border-bottom: 3.5px dotted rgb(197, 195, 195);
+}

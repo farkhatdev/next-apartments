@@ -1,0 +1,12 @@
+.apartments {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  place-items: center;
+}
+.apartments::-webkit-scrollbar {
+  display: none;
+}
+.apartments::-webkit-scrollbar-track {
+  display: none;
+}

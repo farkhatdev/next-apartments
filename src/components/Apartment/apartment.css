@@ -1,0 +1,101 @@
+.apartment {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 350px;
+  background-color: #fcf9f9;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+.apartment:hover {
+  box-shadow: 0 0 5px rgb(194, 192, 192);
+  transition: box-shadow 0.3s;
+}
+.apartment .apartment-duration-type {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 13px;
+  line-height: 13px;
+  background-color: var(--blue-color);
+  border-radius: 5px;
+  color: var(--white-color);
+  text-align: center;
+  padding: 3px;
+}
+.apartment .apartment-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 284px;
+}
+.apartment .apartment-head .apartment-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.apartment .apartment-head .apartment-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.apartment .apartment-body {
+  padding: 5px 0;
+  padding-bottom: 0;
+}
+.apartment .apartment-body .apartment-informations {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.apartment .apartment-body .apartment-info-row,
+.apartment .apartment-body .apartment-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.apartment .apartment-body .apartment-btns {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  padding-bottom: 3px;
+}
+.apartment .apartment-body .apartment-btns .apartment-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(232, 232, 232, 0.567);
+  transition: background-color 0.3s;
+  padding: 5px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.apartment .apartment-body .apartment-btns .apartment-btn:hover {
+  background-color: rgb(213, 212, 212);
+  transition: background-color 0.3s;
+}
+.apartment .apartment-body .apartment-btns .apartment-btn svg path {
+  fill: var(--text-color);
+}
+.apartment .apartment-body .apartment-info-row .apartment-info-row-key {
+  width: 120px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+@media (max-width: 450px) {
+  .apartment .apartment-head {
+    height: 240px;
+  }
+}
+@media (max-width: 380px) {
+  .apartment {
+    width: 100%;
+  }
+}
