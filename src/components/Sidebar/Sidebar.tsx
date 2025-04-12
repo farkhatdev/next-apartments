@@ -1,6 +1,6 @@
 "use client";
 import { JSX, useState } from "react";
-import "./sidebar.css";
+import "./Sidebar.css";
 import { TbLayoutSidebarFilled } from "react-icons/tb";
 import { IoCloudUploadOutline, IoHomeOutline } from "react-icons/io5";
 import { GoClock, GoPerson } from "react-icons/go";
