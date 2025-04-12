@@ -1,6 +1,6 @@
 "use client";
 import { JSX, useState } from "react";
-import "./Sidebar.css";
+import "./sidebar.css";
 import { TbLayoutSidebarFilled } from "react-icons/tb";
 import { IoCloudUploadOutline, IoHomeOutline } from "react-icons/io5";
 import { GoClock, GoPerson } from "react-icons/go";
@@ -8,6 +8,7 @@ import { BsBookmarkStar } from "react-icons/bs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logout from "../Logout/Logout";
+import Image from "next/image";
 
 interface INavigations {
   path: string;
@@ -49,7 +50,7 @@ const Sidebar = () => {
     <aside className={`${isSidebarActive ? "active" : "inactive"} sidebar`}>
       <div className="sidebar-header dotted">
         <div className="logo">
-          <img
+          <Image
             src="/icons/logo.svg"
             alt="Logo"
             width={isSidebarActive ? 150 : 35}
